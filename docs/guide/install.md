@@ -1,4 +1,4 @@
-# Isntall & Usage
+# Install & Use
 
 ## Install
 
@@ -14,7 +14,7 @@ yarn add @webzlodimir/vue-avatar
 npm i @webzlodimir/vue-avatar
 ```
 
-## Usage
+## Use
 
 ### Vue 3
 
@@ -22,6 +22,7 @@ Just import component where you want
 
 ```js
 import {VueAvatar} from '@webzlodimir/vue-avatar'
+import "@webzlodimir/vue-avatar/dist/style.css"
 ```
 
 And use it in `template` tag

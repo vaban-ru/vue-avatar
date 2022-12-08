@@ -5,4 +5,38 @@
 
 Simple and easy to use avatar component for Vue 3
 
-:clapper: [DEMO AND DOCS](https://vaban-ru.github.io/vue-avatar/)
+- :clapper: [DOCS](https://vaban-ru.github.io/vue-avatar/)
+- :open_book: [DEMO](https://github.com/vaban-ru/vue-bottom-sheet/blob/master/README_VUE2.MD)
+- 
+## Install
+
+### Yarn
+
+```
+yarn add @webzlodimir/vue-avatar
+```
+
+### Npm
+
+```
+npm i @webzlodimir/vue-avatar
+```
+
+## Use
+
+### Vue 3
+
+Just import component where you want
+
+```js
+import {VueAvatar} from '@webzlodimir/vue-avatar'
+import "@webzlodimir/vue-avatar/dist/style.css"
+```
+
+And use it in `template` tag
+
+```vue
+<template>
+  <vue-avatar username="Simple User" />
+</template>
+```

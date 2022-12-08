@@ -18,7 +18,7 @@ module.exports = {
       "/guide/": [
         {
           text: "Get started",
-          items: [{ text: "Install & Usage", link: "/guide/install" }],
+          items: [{ text: "Install & Use", link: "/guide/install" }],
         },
         {
           text: "Props",
@@ -30,7 +30,6 @@ module.exports = {
             { text: "Background color", link: "/guide/background-color" },
             { text: "Color", link: "/guide/color" },
             { text: "Lighten", link: "/guide/lighten" },
-            { text: "Custom styles", link: "/guide/custom-styles" },
             { text: "Image", link: "/guide/image" },
           ],
         },
