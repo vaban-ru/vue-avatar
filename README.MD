@@ -6,7 +6,6 @@
 Simple and easy to use avatar component for Vue 3
 
 - :clapper: [DOCS](https://vaban-ru.github.io/vue-avatar/)
-- :open_book: [DEMO](https://github.com/vaban-ru/vue-bottom-sheet/blob/master/README_VUE2.MD)
 
 ## Install
 
