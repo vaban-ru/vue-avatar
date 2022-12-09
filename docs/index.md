@@ -9,6 +9,9 @@ hero:
          text: Get started
          link: /guide/install
        - theme: alt
+         text: Playground
+         link: https://codesandbox.io/s/romantic-cache-jf3ipd?file=/src/App.vue
+       - theme: alt
          text: Github
          link: https://github.com/vaban-ru/vue-avatar
 

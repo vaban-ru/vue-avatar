@@ -5,7 +5,8 @@
 
 Simple and easy to use avatar component for Vue 3
 
-- :clapper: [DOCS](https://vaban-ru.github.io/vue-avatar/)
+- [DOCS](https://vaban-ru.github.io/vue-avatar/)
+- [PLAYGROUND](https://codesandbox.io/s/romantic-cache-jf3ipd?file=/src/App.vue)
 
 ## Install
 
