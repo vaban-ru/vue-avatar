@@ -33,7 +33,6 @@ const props = withDefaults(defineProps<IProps>(), {
   username: "Vue Avatar",
   size: 50,
   borderRadius: "100%",
-  backgroundColor: "#1aa9bf",
   lighten: 150,
 });
 
@@ -41,7 +40,10 @@ const props = withDefaults(defineProps<IProps>(), {
  * Get uppercase letters from username
  */
 const parsedUserName = computed(() => {
-  return props.username.match(/[A-Z]/g)?.slice(0, 3).join("");
+  return props.username
+    .match(/[A-ZА-ЯЁё]/g)
+    ?.slice(0, 3)
+    .join("");
 });
 
 /**
@@ -53,8 +55,8 @@ const avatarStyles = computed(() => {
     height: `${props.size}px`,
     borderRadius: props.borderRadius,
     fontSize: `${props.size / 2.2}px`,
-    backgroundColor: props.backgroundColor,
-    color: props.color || lightenColor(props.backgroundColor, props.lighten),
+    backgroundColor: backgroundColor.value,
+    color: props.color || lightenColor(backgroundColor.value, props.lighten),
     ...props.customStyles,
   };
 });
@@ -106,6 +108,25 @@ const lightenColor = (backgroundColor: string, amt: number) => {
   }
   return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
 };
+
+/**
+ * Generate background color depends on username
+ */
+const backgroundColor = computed(() => {
+  if (props.backgroundColor) {
+    return props.backgroundColor;
+  }
+  let hash = 0;
+  for (let i = 0; i < props.username.length; i++) {
+    hash = props.username.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  let color = "#";
+  for (let i = 0; i < 3; i++) {
+    const value = (hash >> (i * 8)) & 0xff;
+    color += ("00" + value.toString(16)).substr(-2);
+  }
+  return color;
+});
 
 const slots = useSlots();
 </script>

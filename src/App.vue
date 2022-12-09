@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vue-avatar />
+    <vue-avatar username="Vladimir Banduristov" />
   </div>
 </template>
 
