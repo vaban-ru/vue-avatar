@@ -20,7 +20,6 @@ export interface IProps {
   borderRadius?: string;
   backgroundColor?: string;
   color?: string;
-  customStyles?: object;
   lighten?: number;
   imgSrc?: string;
   imgAlt?: string;
@@ -57,7 +56,6 @@ const avatarStyles = computed(() => {
     fontSize: `${props.size / 2.2}px`,
     backgroundColor: backgroundColor.value,
     color: props.color || lightenColor(backgroundColor.value, props.lighten),
-    ...props.customStyles,
   };
 });
 

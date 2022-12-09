@@ -1,6 +1,6 @@
 {
   "name": "@webzlodimir/vue-avatar",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
@@ -11,6 +11,18 @@
     "docs:serve": "vitepress serve docs",
     "lint:types": "vue-tsc"
   },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "component",
+    "avatar"
+  ],
+  "author": "webzlodimir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaban-ru/vue-avatar/issues"
+  },
+  "homepage": "https://github.com/vaban-ru/vue-avatar#readme",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^20.0.0",
