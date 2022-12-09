@@ -21,8 +21,8 @@ npm i @webzlodimir/vue-avatar
 Just import component where you want
 
 ```js
-import {VueAvatar} from '@webzlodimir/vue-avatar'
-import "@webzlodimir/vue-avatar/dist/style.css"
+import VueAvatar from "@webzlodimir/vue-avatar";
+import "@webzlodimir/vue-avatar/dist/style.css";
 ```
 
 And use it in `template` tag
