@@ -1,5 +1,5 @@
 <template>
-  <div :style="avatarStyles" :class="avatarClasses">
+  <div :style="avatarStyles" class="vue-avatar">
     <template v-if="!slots.default && !props.imgSrc">
       {{ parsedUserName }}
     </template>
@@ -36,7 +36,7 @@ const props = withDefaults(defineProps<IProps>(), {
 });
 
 /**
- * Get uppercase letters from username
+ * Computed return uppercase letters from username
  */
 const parsedUserName = computed(() => {
   return props.username
@@ -46,7 +46,7 @@ const parsedUserName = computed(() => {
 });
 
 /**
- * Compute components styles
+ * Computed return components styles
  */
 const avatarStyles = computed(() => {
   return {
@@ -57,19 +57,6 @@ const avatarStyles = computed(() => {
     backgroundColor: backgroundColor.value,
     color: props.color || lightenColor(backgroundColor.value, props.lighten),
   };
-});
-
-/**
- * Compute components classes
- */
-const avatarClasses = computed(() => {
-  return [
-    "vue-avatar",
-    {
-      "vue-avatar--rounded":
-        props.borderRadius && props.borderRadius.length > 0,
-    },
-  ];
 });
 
 /**
@@ -147,14 +134,6 @@ const slots = useSlots();
       height: 100%;
       object-fit: cover;
       border-radius: inherit;
-    }
-  }
-  &--rounded {
-    &:deep {
-      img,
-      picture {
-        border-radius: inherit;
-      }
     }
   }
 }

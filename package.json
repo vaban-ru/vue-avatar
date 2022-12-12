@@ -1,6 +1,6 @@
 {
   "name": "@webzlodimir/vue-avatar",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
