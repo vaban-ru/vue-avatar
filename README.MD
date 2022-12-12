@@ -28,11 +28,13 @@ npm i @webzlodimir/vue-avatar
 
 ### Vue 3
 
-Just import component where you want
+Just import component and styles in `script` section
 
-```js
-import VueAvatar from "@webzlodimir/vue-avatar";
-import "@webzlodimir/vue-avatar/dist/style.css";
+```vue
+<script setup>
+  import VueAvatar from "@webzlodimir/vue-avatar";
+  import "@webzlodimir/vue-avatar/dist/style.css";
+</script>
 ```
 
 And use it in `template` tag
@@ -41,4 +43,26 @@ And use it in `template` tag
 <template>
   <vue-avatar username="Simple User" />
 </template>
+```
+
+## Develop
+
+To start develop server with demo use command
+
+```
+yarn demo
+```
+or
+```
+npm run demo
+```
+
+To start develop docs, use command
+
+```
+yarn docs:dev
+```
+or
+```
+npm run docs:dev
 ```
