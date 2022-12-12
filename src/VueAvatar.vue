@@ -40,7 +40,7 @@ const props = withDefaults(defineProps<IProps>(), {
  */
 const parsedUserName = computed(() => {
   return props.username
-    .match(/[A-ZА-ЯЁё]/g)
+    .match(/[A-ZА-ЯЁ]/g)
     ?.slice(0, 3)
     .join("");
 });
