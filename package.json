@@ -1,6 +1,7 @@
 {
   "name": "@webzlodimir/vue-avatar",
-  "version": "0.0.7",
+  "description": "Simple and easy to use avatar component for Vue 3",
+  "version": "0.0.8",
   "private": false,
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
@@ -17,8 +18,12 @@
     "component",
     "avatar"
   ],
-  "author": "webzlodimir",
+  "author": "Vladimir Banduristov <hello@webzlodimir.ru> (https://vaban.ru/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaban-ru/vue-avatar.git"
+  },
   "bugs": {
     "url": "https://github.com/vaban-ru/vue-avatar/issues"
   },
